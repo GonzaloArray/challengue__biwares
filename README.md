@@ -1,31 +1,103 @@
-# React + TypeScript + Vite
+# Descripción del Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto consiste en crear una API y una aplicación web en React para manejar un sistema de puntuación de películas. La aplicación permitirá a los usuarios puntuar películas, y visualizar un dashboard con análisis de datos relacionados con las películas y las puntuaciones.
 
-Currently, two official plugins are available:
+## Contenidos del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **API para acceso a datos**
+- **Aplicación Web en React**
+  - Página de Login
+  - Sidebar con opciones de navegación
+  - Página de Puntuación de Películas
+  - Página de Análisis de Puntuaciones
 
-## Expanding the ESLint configuration
+### Aplicación Web en React
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+La aplicación web en React permitirá a los usuarios autenticarse, puntuar películas y ver análisis de datos.
 
-- Configure the top-level `parserOptions` property like this:
+#### Componentes
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **LoginPage**
+   - Formulario de login con ID de usuario y nombre como contraseña.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# challengue__biwares
+2. **Sidebar**
+   - Opciones de navegación (Puntuar y Dashboard).
+   - Opción para ocultar/mostrar el sidebar.
+
+3. **Puntuar Película**
+   - Filtros por fecha de lanzamiento, géneros y puntaje.
+   - Tabla de resultados con ID, Nombre, Fecha de Lanzamiento, Géneros, Puntuación del Usuario, Puntuación General (Promedio), Acciones (Puntuar/Borrar Puntaje).
+
+4. **Dashboard**
+   - Selección de género para ver evolución histórica del puntaje promedio.
+   - Histograma de puntuaciones por género con opción de filtrar por rango etario.
+
+## Guía de Instalación
+
+### Requisitos Previos
+
+- Node.js
+- npm (Node Package Manager)
+
+### Backend
+
+1. Clonar el repositorio
+   ```bash
+   git clone https://github.com/tuusuario/tu-repositorio.git
+   cd tu-repositorio/backend
+   ```
+
+2. Instalar dependencias
+   ```bash
+   npm install
+   ```
+
+### Frontend
+
+1. Navegar al directorio frontend
+   ```bash
+   cd ../frontend
+   ```
+
+2. Instalar dependencias
+   ```bash
+   npm install
+   ```
+
+3. Iniciar la aplicación
+   ```bash
+   npm start
+   ```
+
+4. La aplicación estará disponible en `http://localhost:3000`
+
+## Uso de la Aplicación
+
+1. **Login**
+   - Acceder a la página de login en `http://localhost:3000/login`.
+   - Ingresar el ID de usuario y el nombre como contraseña.
+
+2. **Sidebar**
+   - Utilizar el sidebar para navegar entre las páginas de Puntuar y Dashboard.
+
+3. **Puntuar Película**
+   - Filtrar películas por fecha de lanzamiento, géneros y puntaje.
+   - Puntuar películas o borrar puntuaciones existentes.
+
+4. **Dashboard**
+   - Seleccionar un género para ver la evolución histórica del puntaje promedio.
+   - Visualizar histograma de puntuaciones por género y filtrar por rango etario.
+
+## Enlace al Prototipo en Figma
+
+Puedes ver el diseño del prototipo en Figma [aquí](https://www.figma.com/proto/9V3eIbStnTNuDY7I3GsdvH/Movie-page?page-id=2%3A985&node-[…]3pUbtDoNYg-1&scaling=scale-down&starting-point-node-id=3%3A577).
+
+## Contribuciones
+
+Para contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza los cambios necesarios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
