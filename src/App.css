@@ -1,0 +1,35 @@
+#root {
+  margin: 0 auto;
+  color-scheme: dark ;
+
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+*::-webkit-scrollbar-track {
+  background-color: #0f172a;
+  
+}
+*::-webkit-scrollbar-thumb {
+  color: #f0f0f0;
+  background-color: #334155;
+  border-radius: 9999px;
+
+  
+}
+
+
+*::-webkit-scrollbar-button {
+  color: black;
+  height: 0;
+
+}
+/* Define the button style when being hovered over */
+*::-webkit-scrollbar-button:hover {
+  background-color: #999999;
+}
