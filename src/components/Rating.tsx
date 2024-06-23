@@ -58,7 +58,7 @@ const Rating = () => {
         if (user) {
           const [response1, response2, response3] = await Promise.all([
             fetch(
-              "https://script.google.com/macros/s/AKfycbzsd7GIgUKdklck2t7TFaE8zs3Q8m_f7QpADCnvk4CNWhVogQ8Hv45IZlFdKxckcK4a7w/exec"
+              "https://script.google.com/macros/s/AKfycbzkTqrecKUFNvqUtK279UB01r0oNYaSOzSj8QthrooK_-Sj0LLomQ7KbJZMhH3hGB6R/exec"
             ),
             fetch(
               "https://script.google.com/macros/s/AKfycbx6MJpO-YaS7QwkPQk7z8wkSSnHoiAHBwn-gE0BXmK-9dN-l1y7XIZQcpJAelAWGSY/exec"
