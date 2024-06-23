@@ -39,19 +39,6 @@ La aplicación web en React permitirá a los usuarios autenticarse, puntuar pel�
 - Node.js
 - npm (Node Package Manager)
 
-### Backend
-
-1. Clonar el repositorio
-   ```bash
-   git clone https://github.com/tuusuario/tu-repositorio.git
-   cd tu-repositorio/backend
-   ```
-
-2. Instalar dependencias
-   ```bash
-   npm install
-   ```
-
 ### Frontend
 
 1. Navegar al directorio frontend
