@@ -54,4 +54,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 Button.displayName = "Button"
 
-export { Button, buttonVariants }
+const RedirectButton = () => (
+  <Button
+    variant="link"
+    onClick={() => window.location.href = "https://laburen.com"}
+  >
+    Go to Laburen
+  </Button>
+)
+
+export { Button, RedirectButton, buttonVariants }
